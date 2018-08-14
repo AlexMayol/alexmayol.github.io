@@ -1,0 +1,9 @@
+footer{
+    background-color: var(--footer-bg);
+    color: var(--footer-color);
+}
+footer svg{
+    color:var(--footer-svg-color);
+    width: 1.5rem;
+    height: 1.5rem  ;
+}
