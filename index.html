@@ -8,45 +8,26 @@
   <meta name="description" content="Portfolio personal de Alejandro Mayol">
   <meta name="subject" content="Mostrando mis proyectos al mundio">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="style/remedy.css" rel="stylesheet" type="text/css">
-  <link href="style/style.css" rel="stylesheet" type="text/css">
-  <link href="style/themes.css" rel="stylesheet" type="text/css">
+  <link href="portfolio/style/remedy.css" rel="stylesheet" type="text/css">
+  <link href="portfolio/style/style.css" rel="stylesheet" type="text/css">
   <noscript>
     Enable JavaScript in order to see this page properly
   </noscript>
-  <title>Proyectos | Alejandro Mayol</title>
+  <title>Alejandro Mayol | Portfolio</title>
 </head>
 
 <body>
-  <header role="banner">
-    <nav class="nav-menu">
-      <ul class="menu">
-        <li class="menu-item"><a href="index.html">Inicio</a></li>
-        <li class="menu-item"><a href="projects.html">Proyectos</a></li>
-        <li class="menu-item"><a href="contact.html">Contacto</a></li>
+  <main id="app">
+    <h1 class="text-center">Alejandro Mayol</h1>
+    <p class="m0 px2 text-center">Ingeniero Multimedia, desarrollador Front-end, apasionado de la tecnología</p>
+    <!-- <img class="test" src="img/alex.png " alt=""> -->
+    <nav>
+      <ul class="home-menu">
+        <li class="home-menu-item"><a href="portfolio/index.html">Proyectos</a></li>
+        <li class="home-menu-item"><a href="resume.html">Curriculum</a></li>
+        <li class="home-menu-item"><a href="contact.html">Contacto</a></li>
       </ul>
     </nav>
-  </header>
-
-  <main id="projects">
-
-    <section class="p2">
-      <h2 class="title-decoration my2">Sitios Web</h2>
-      <project-list :projects="webs"></project-list>
-    </section>
-
-    <section class="p2">
-      <h2 class="title-decoration my2">Web Apps y herramientas</h2>
-      <project-list :projects="apps"></project-list>
-    </section>
-
-    <section class="p2">
-      <h2 class="title-decoration my2">Juegos</h2>
-      <project-list :projects="games"></project-list>
-    </section>
-  </main>
-  
-  <footer id="footer" class="py2" role="contentinfo">
     <nav class="social">
       <ul>
         <li>
@@ -71,9 +52,9 @@
         </li>
       </ul>
     </nav>
-    <theme-picker></theme-picker>
-  </footer>
-  <script type="text/javascript" src="projectsinfo.js"></script>
+  </main>
+
+
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="code/code.js"></script>
 </body>
