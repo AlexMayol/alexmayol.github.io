@@ -2,7 +2,7 @@ Vue.component("theme-picker", {
   data: function() {
     return {
       selected: "",
-      themes: [{ name: "default" },{ name: "aquamarina" }, { name: "joy" }, { name: "fortune" }, { name: "summer" }, { name: "soft" }, { name: "veggie" }, { name: "alto-contraste" }]
+      themes: [{ name: "default" },{ name: "cold-warm" },{ name: "alto-contraste"}, { name: "dark-pink"}, { name: "veggie"}]
     };
   },
   mounted(){

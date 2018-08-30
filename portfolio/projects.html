@@ -19,11 +19,11 @@
 
 <body>
   <header role="banner">
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="projects.html">Proyectos</a></li>
-        <li><a href="contact.html">Contacto</a></li>
+    <nav class="nav-menu">
+      <ul class="menu">
+        <li class="menu-item"><a href="index.html">Inicio</a></li>
+        <li class="menu-item"><a href="projects.html">Proyectos</a></li>
+        <li class="menu-item"><a href="contact.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -35,7 +35,7 @@
         <div v-for="web in webs" class="card">
           <img :src="web.image" alt="">
           <div class="info">
-            <h2><a :href="web.link">{{web.name}}</a></h2>
+            <h2><a :href="web.link" target="_blank">{{web.name}}</a></h2>
             <p>{{web.excerpt}}</p>
             <button @click="showInfo(web)">Más información</button>
           </div>
@@ -50,7 +50,7 @@
         <div v-for="app in apps" class="card">
           <img :src="app.image" alt="">
           <div class="info">
-            <h2><a :href="app.link">{{app.name}}</a></h2>
+            <h2><a :href="app.link" target="_blank">{{app.name}}</a></h2>
             <p>{{app.excerpt}}</p>
             <button @click="showInfo(app)">Más información</button>
           </div>
@@ -65,7 +65,7 @@
         <div v-for="game in games" class="card">
           <img :src="game.image" alt="">
           <div class="info">
-            <h2><a :href="game.link">{{game.name}}</a></h2>
+            <h2><a :href="game.link" target="_blank">{{game.name}}</a></h2>
             <p>{{game.excerpt}}</p>
             <button @click="showInfo(game)">Más información</button>
           </div>
