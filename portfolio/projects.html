@@ -27,52 +27,25 @@
       </ul>
     </nav>
   </header>
+
   <main id="projects">
+
     <section class="p2">
       <h2 class="title-decoration my2">Sitios Web</h2>
-      <div class="projects">
-
-        <div v-for="web in webs" class="card">
-          <img :src="web.image" alt="">
-          <div class="info">
-            <h2><a :href="web.link" target="_blank">{{web.name}}</a></h2>
-            <p>{{web.excerpt}}</p>
-            <button @click="showInfo(web)">Más información</button>
-          </div>
-        </div>
-      </div>
+      <project-list :projects="webs"></project-list>
     </section>
 
     <section class="p2">
       <h2 class="title-decoration my2">Web Apps y herramientas</h2>
-      <div class="projects">
-
-        <div v-for="app in apps" class="card">
-          <img :src="app.image" alt="">
-          <div class="info">
-            <h2><a :href="app.link" target="_blank">{{app.name}}</a></h2>
-            <p>{{app.excerpt}}</p>
-            <button @click="showInfo(app)">Más información</button>
-          </div>
-        </div>
-      </div>
+      <project-list :projects="apps"></project-list>
     </section>
 
     <section class="p2">
-
       <h2 class="title-decoration my2">Juegos</h2>
-      <div class="projects">
-        <div v-for="game in games" class="card">
-          <img :src="game.image" alt="">
-          <div class="info">
-            <h2><a :href="game.link" target="_blank">{{game.name}}</a></h2>
-            <p>{{game.excerpt}}</p>
-            <button @click="showInfo(game)">Más información</button>
-          </div>
-        </div>
-      </div>
+      <project-list :projects="games"></project-list>
     </section>
   </main>
+  
   <footer id="footer" class="py2" role="contentinfo">
     <nav class="social">
       <ul>

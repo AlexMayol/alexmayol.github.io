@@ -28,6 +28,22 @@ Vue.component("theme-picker", {
                 </select></label>`
 });
 
+Vue.component('project-list', {
+  props: ['projects'],
+  template: `
+  <div class="projects">
+    <div v-for="pr in projects" class="card">
+      <img :src="pr.image" alt="">
+      <div class="info">
+        <h2><a :href="pr.link" target="_blank">{{pr.name}}</a></h2>
+        <p>{{pr.excerpt}}</p>
+        <button @click="showInfo(pr)">Más información</button>
+     </div>
+    </div>
+    </div>
+  `
+})
+
 
 
 if (document.getElementById("app")) {
@@ -40,6 +56,7 @@ if (document.getElementById("app")) {
 
 if (document.getElementById("projects")) {
   new Vue({
+    
     el: "#projects",
     data: {
       projects: projectsinfo,
@@ -59,8 +76,9 @@ if (document.getElementById("projects")) {
     }
   });
 }
-
+if (document.getElementById("footer")) {
 new Vue({
   el: "#footer",
   components: { themepicker: "theme-picker" } 
 });
+}
