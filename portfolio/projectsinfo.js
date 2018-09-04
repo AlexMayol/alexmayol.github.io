@@ -6,7 +6,8 @@ const projectsinfo = [
         "description": "En un ecosistema dominado por Boostrap y sus variantes, he querido aportar mi granito de arena desarrollando un framework que supliera mis necesidades básicas de maquetación, a la vez que me proporcionara una manera de dar estilo a cada proyecto de manera rápida, y sin ocupar muchos Kb.",
         "image": "img/remedy.png",
         "stack": "CSS, Parcel bundler",
-        "link": "https://github.com/AlexMayol/remedy",
+        "src":"https://github.com/AlexMayol/remedy",
+        "link": null,
         "type": "app"
     },
     {
@@ -16,6 +17,7 @@ const projectsinfo = [
         "description": "Con la API REST de WordPress se puede tener lo mejor de ese CMS sin los peor: los tediosos tiempo de carga. Esta Single Page Application suple esos problemas y sirve como demostración de blog accesible.",
         "image": "img/blog.png",
         "stack": "Vue, WP API, Vue-router, Bootstrap-Vue",
+        "src":"https://github.com/AlexMayol/Integratur-blog",
         "link": "https://blog.integratur.com",
         "type": "app"
     },
@@ -26,6 +28,7 @@ const projectsinfo = [
         "description": "Para demostrar que un diseño bonito no está reñido con la accesibilidad web, desarrollé este portal de demostración totalmente responsive y sin el uso de ningún framework CSS. Mi primer proyecto en el que aprendí mucho sobre maquetación y optimización del tiempo de carga.",
         "image": "img/hotel.png",
         "stack": "HTML, CSS, JS, W3.CSS",
+        "src":"",
         "link": "https://integratur.com/hotel/",
         "type": "web"
     },
@@ -36,6 +39,7 @@ const projectsinfo = [
         "description": "Una alternativa gratuita a la API REST de WordPress es la de Blogger. De manera muy similar, permite listar y mostrar las entradas de un blog. Este blog colaborativo también tiene un selector de temas que demuestra la potencia de las variables CSS y lo fácil que es implementar una característica que aporta mucho al valor de un sitio web.",
         "image": "img/recipes.png",
         "stack": "HTML, CSS, JS, Vue, Blogger API",
+        "src":"",
         "link": "https://play.google.com/store/apps/details?id=com.tomateteam.healthmato",
         "type":"web"    
     },
@@ -46,6 +50,7 @@ const projectsinfo = [
         "description": "Para mi Trabajo de Fin de Grado en Ingeniería Multimedia desarrollé un portal capaz de evaluar la accesibilidad web de otras páginas web. Para ello, listé todas las pautas de las WCAG 2.0 que podía testear de manera automática y utilicé PhantomJS para ejecutar este código en un servidor. Como resultado, el usuario obtiene una nota orientativa, una lista de errores y enlaces a la documentación oficial para poder arreglarlos.",
         "image": "img/accestitan.png",
         "stack": "HTML, CSS, JS, PHP, PhantomJS, Heroku",
+        "src":"https://github.com/AlexMayol/AccesTitan",
         "link": "https://accestitan.herokuapp.com/",
         "type":"web"    
     },
@@ -56,6 +61,7 @@ const projectsinfo = [
         "description": "Clon de la landing page de un cliente potencial donde reproduzco todos los elementos de una página genérica hecha en WordPress, consiguiendo un mejor tiempo de carga (puntuación en PageSpeed Insights) y mejor accesibilidad (puntiación en Tenon.io, Achecker, etc.).",
         "image": "img/casaverde.png",
         "stack": "HTML, CSS, Vue, Vue-Bootstrap",
+        "src": null,
         "link": "https://integratur.com/casaverde/",
         "type":"web"    
     },
@@ -66,6 +72,7 @@ const projectsinfo = [
         "description": "Multiples webs pequeñas que se dedican a seguir las diferentes ligas de fútbol e informar de sus resultados utilizan imágenes que deben crear ellos en programas como Photoshop, o directamente cogen contnido de sitios web más importantes. Con esta herramienta pueden crear alineaciones y configurarlas a su gusto desde un panel muy intuitivo.",
         "image": "img/soccer.png",
         "stack": "name",
+        "src":"",
         "link": "name",
         "type":"app"    
     },
@@ -76,6 +83,7 @@ const projectsinfo = [
         "description": "Diversos ejemplos donde exploro la potencia de esta nueva implementación a CSS. Actualizo estos ejemplos periódicamente con todos los ejemplos de prueba que realizo.",
         "image": "img/cssgrid.png",
         "stack": "name",
+        "src":"https://github.com/AlexMayol/css-grid-playground",
         "link": "https://alexmayol.github.io/css-grid-playground/src/",
         "type":"web"    
     },
@@ -86,6 +94,7 @@ const projectsinfo = [
         "description": "Demostración de un componente de Vue que ayuda a cambiar el tema de una página entera, en este caso con la ayuda de mi framework Remedy.",
         "image": "img/theme.png",
         "stack": "name",
+        "src":"",
         "link": "name",
         "type":"app"    
     },
@@ -96,7 +105,8 @@ const projectsinfo = [
         "description": "Durante el último año de Ingeniería Multimedia realizamos un proyecto que englobaba las diferentes asignaturas de ese año. El proyecto consistía en un juego que creamos desde cero y en el que aprendimos todo lo necesario para desarrollar videojuegos. Fuimos el proyecto con mayor puntuación de todos, e incluso aparecimos en el periódico local.",
         "image": "img/mythia.png",
         "stack": "OpenGL, C++, Irllciht, Unity, Box2D, Raknet",
-        "link": "",
+        "src":"",
+        "link": null,
         "type":"game"    
     },
     {
@@ -106,6 +116,7 @@ const projectsinfo = [
         "description": "name",
         "image": "img/healthmato.png",
         "stack": "Android, Java, Libgdx, Eclipse",
+        "src": null,
         "link": "https://play.google.com/store/apps/details?id=com.tomateteam.healthmato",
         "type":"game"    
     },
@@ -116,6 +127,7 @@ const projectsinfo = [
         "description": "name",
         "image": "img/walpurgis.png",
         "stack": "Unity, C#, 3DS Max",
+        "src": null,
         "link": "https://play.google.com/store/apps/details?id=com.Pixys.WalpurgisRush",
         "type":"game"    
     },
@@ -126,6 +138,7 @@ const projectsinfo = [
         "description": "name",
         "image": "img/cifrador.png",
         "stack": "Android, Java, Eclipse",
+        "src": null,
         "link": "https://play.google.com/store/apps/details?id=cs.cifrador",
         "type":"app"    
     },
@@ -136,7 +149,8 @@ const projectsinfo = [
         "description": "name",
         "image": "img/aztecalypse.png",
         "stack": "Android, Java, Libgdx, Eclipse",
-        "link": "https://github.com/miquelgalianallorca/Aztecalypse",
+        "src":"https://github.com/miquelgalianallorca/Aztecalypse",
+        "link": null,
         "type":"game"    
     },
 
@@ -147,6 +161,7 @@ const projectsinfo = [
         "description": "name",
         "image": "img/adaptamos.png",
         "stack": "WordPress, CSS",
+        "src":null,
         "link": "http://www.adaptamosgroup.com/",
         "type":"web"    
     },
@@ -157,7 +172,8 @@ const projectsinfo = [
         "description": "name",
         "image": "img/hotel.png",
         "stack": "HTML, CSS, JS, PHP",
-        "link": "https://github.com/AlexMayol/Stardust-Images",
+        "src":"https://github.com/AlexMayol/Stardust-Images",
+        "link": null,
         "type":"web"    
     },
  

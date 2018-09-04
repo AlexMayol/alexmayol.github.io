@@ -8,20 +8,20 @@
   <meta name="description" content="Portfolio personal de Alejandro Mayol">
   <meta name="subject" content="Mostrando mis proyectos al mundio">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="style/remedy.css" rel="stylesheet" type="text/css">
-  <link href="style/style.css" rel="stylesheet" type="text/css">
-  <link href="style/themes.css" rel="stylesheet" type="text/css">
+  <link href="../style/remedy.css" rel="stylesheet" type="text/css">
+  <link href="../style/style.css" rel="stylesheet" type="text/css">
+  <link href="../style/themes.css" rel="stylesheet" type="text/css">
   <noscript>
     Enable JavaScript in order to see this page properly
   </noscript>
   <title>Proyectos | Alejandro Mayol</title>
 </head>
 
-<body>
+<body class="default">
   <header role="banner">
     <nav class="nav-menu">
       <ul class="menu">
-        <li class="menu-item"><a href="index.html">Inicio</a></li>
+        <li class="menu-item"><a href="../index.html">Inicio</a></li>
         <li class="menu-item"><a href="projects.html">Proyectos</a></li>
         <li class="menu-item"><a href="contact.html">Contacto</a></li>
       </ul>
@@ -45,14 +45,15 @@
       <project-list :projects="games"></project-list>
     </section>
 
-    <div class="modal" :class="{openModal: openModal}" role="dialog">
+    <div id="modal" class="modal" role="dialog">
       <div v-if="modal != null" class="modal-content">
+       <button class="close" @click="closeModal">&times;</button>
         <h2>{{modal.name}}</h2>
         <p v-html="modal.description"></p>
         <div class="stack">
           <span v-for="stack in getStack(modal.stack)">{{stack}}</span>
         </div>
-        <a :href="modal.link">Ver código fuente</a>
+        <a :href="modal.link" target="_blank">Ver código fuente</a>
       </div>
     </div>
 
@@ -87,7 +88,7 @@
   </footer>
   <script type="text/javascript" src="projectsinfo.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="code/code.js"></script>
+  <script src="../code/code.js"></script>
 </body>
 
 </html>

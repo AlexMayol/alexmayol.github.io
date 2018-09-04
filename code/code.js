@@ -39,7 +39,8 @@ Vue.component("project-list", {
     <div v-for="pr in projects" class="card">
       <img :src="pr.image" alt="">
       <div class="info">
-        <h2><a class="title" :href="pr.link" target="_blank">{{pr.name}}</a></h2>
+        <h2 v-if="pr.link != null"><a class="title" :href="pr.link" target="_blank">{{pr.name}}</a></h2>
+        <h2 v-else>{{pr.name}}</h2>
         <p>{{pr.excerpt}}</p>
         <button @click="showInfo(pr)">Más información</button>
      </div>
@@ -68,23 +69,29 @@ if (document.getElementById("projects")) {
       webs: null,
       games: null,
       apps: null,
-      modal: null,
-      openModal: false
+      modal: null
     },
     mounted() {
       this.webs = this.projects.filter(obj => obj.type == "web");
       this.apps = this.projects.filter(obj => obj.type == "app");
       this.games = this.projects.filter(obj => obj.type == "game");
-      this.$on("showInfo", value => this.showModal(value));
+      this.$on("showInfo", value => this.showInfo(value));
     },
     methods: {
       getStack(string) {
         return string.split(",");
       },
-      showModal(project) {
+      showInfo(project) {
         this.modal = project;
-        this.openModal = true;
-        document.body.style.overflow = "hidden";
+        var modal = document.getElementById("modal");
+        modal.style.display = "flex";
+        window.onclick = function(event) {
+          if (event.target == modal) modal.style.display = "none";
+        };
+      },
+      closeModal() {
+        var modal = document.getElementById("modal");
+        modal.style.display = "none";
       }
     }
   });
