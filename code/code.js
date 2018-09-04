@@ -4,10 +4,7 @@ Vue.component("theme-picker", {
       selected: "",
       themes: [
         { name: "default" },
-        { name: "cold-warm" },
-        { name: "alto-contraste" },
-        { name: "dark-pink" },
-        { name: "veggie" }
+        { name: "sea-salt" }
       ]
     };
   },
