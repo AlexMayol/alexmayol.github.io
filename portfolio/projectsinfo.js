@@ -28,7 +28,7 @@ const projectsinfo = [
         "description": "Para demostrar que un diseño bonito no está reñido con la accesibilidad web, desarrollé este portal de demostración totalmente responsive y sin el uso de ningún framework CSS. Mi primer proyecto en el que aprendí mucho sobre maquetación y optimización del tiempo de carga.",
         "image": "img/hotel.png",
         "stack": "HTML, CSS, JS, W3.CSS",
-        "src":"",
+        "src":null,
         "link": "https://integratur.com/hotel/",
         "type": "web"
     },
@@ -39,7 +39,7 @@ const projectsinfo = [
         "description": "Una alternativa gratuita a la API REST de WordPress es la de Blogger. De manera muy similar, permite listar y mostrar las entradas de un blog. Este blog colaborativo también tiene un selector de temas que demuestra la potencia de las variables CSS y lo fácil que es implementar una característica que aporta mucho al valor de un sitio web.",
         "image": "img/recipes.png",
         "stack": "HTML, CSS, JS, Vue, Blogger API",
-        "src":"",
+        "src":null,
         "link": "https://play.google.com/store/apps/details?id=com.tomateteam.healthmato",
         "type":"web"    
     },
@@ -72,8 +72,8 @@ const projectsinfo = [
         "description": "Multiples webs pequeñas que se dedican a seguir las diferentes ligas de fútbol e informar de sus resultados utilizan imágenes que deben crear ellos en programas como Photoshop, o directamente cogen contnido de sitios web más importantes. Con esta herramienta pueden crear alineaciones y configurarlas a su gusto desde un panel muy intuitivo.",
         "image": "img/soccer.png",
         "stack": "name",
-        "src":"",
-        "link": "name",
+        "src":null,
+        "link": null,
         "type":"app"    
     },
     {
@@ -82,7 +82,7 @@ const projectsinfo = [
         "excerpt": "Una característica de CSS tan importante merece un buen 'patio de juegos' donde experimentar con ella.",
         "description": "Diversos ejemplos donde exploro la potencia de esta nueva implementación a CSS. Actualizo estos ejemplos periódicamente con todos los ejemplos de prueba que realizo.",
         "image": "img/cssgrid.png",
-        "stack": "name",
+        "stack": "CSS, CSS Grid, VueJS",
         "src":"https://github.com/AlexMayol/css-grid-playground",
         "link": "https://alexmayol.github.io/css-grid-playground/src/",
         "type":"web"    
@@ -94,8 +94,8 @@ const projectsinfo = [
         "description": "Demostración de un componente de Vue que ayuda a cambiar el tema de una página entera, en este caso con la ayuda de mi framework Remedy.",
         "image": "img/theme.png",
         "stack": "name",
-        "src":"",
-        "link": "name",
+        "src":null,
+        "link": null,
         "type":"app"    
     },
     {
@@ -105,7 +105,7 @@ const projectsinfo = [
         "description": "Durante el último año de Ingeniería Multimedia realizamos un proyecto que englobaba las diferentes asignaturas de ese año. El proyecto consistía en un juego que creamos desde cero y en el que aprendimos todo lo necesario para desarrollar videojuegos. Fuimos el proyecto con mayor puntuación de todos, e incluso aparecimos en el periódico local.",
         "image": "img/mythia.png",
         "stack": "OpenGL, C++, Irllciht, Unity, Box2D, Raknet",
-        "src":"",
+        "src":null,
         "link": null,
         "type":"game"    
     },

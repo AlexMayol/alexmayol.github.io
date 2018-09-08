@@ -4,7 +4,11 @@ Vue.component("theme-picker", {
       selected: "",
       themes: [
         { name: "default" },
-        { name: "sea-salt" }
+        { name: "green" },
+        { name: "sunset" },
+        { name: "sea-salt" },
+        {name: "pinker"},
+        {name: "soft"}
       ]
     };
   },
@@ -29,6 +33,7 @@ Vue.component("theme-picker", {
   </select></label>`
 });
 
+ // <h2 v-if="pr.link != null"><a class="title" :href="pr.link" target="_blank">{{pr.name}}</a></h2>
 Vue.component("project-list", {
   props: ["projects"],
   template: `
@@ -36,8 +41,8 @@ Vue.component("project-list", {
     <div v-for="pr in projects" class="card">
       <img :src="pr.image" alt="">
       <div class="info">
-        <h2 v-if="pr.link != null"><a class="title" :href="pr.link" target="_blank">{{pr.name}}</a></h2>
-        <h2 v-else>{{pr.name}}</h2>
+       
+        <h2>{{pr.name}}</h2>
         <p>{{pr.excerpt}}</p>
         <button @click="showInfo(pr)">Más información</button>
      </div>

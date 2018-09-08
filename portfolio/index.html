@@ -17,19 +17,19 @@
   <title>Proyectos | Alejandro Mayol</title>
 </head>
 
-<body class="default">
+<body>
   <header role="banner">
     <nav class="nav-menu">
       <ul class="menu">
         <li class="menu-item"><a href="../index.html">Inicio</a></li>
-        <li class="menu-item"><a href="projects.html">Proyectos</a></li>
+        <li class="menu-item"><a href="index.html">Proyectos</a></li>
         <li class="menu-item"><a href="contact.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="projects">
-
+    
     <section class="p2">
       <h2 class="title-decoration my2">Sitios Web</h2>
       <project-list :projects="webs"></project-list>
@@ -48,12 +48,16 @@
     <div id="modal" class="modal" role="dialog">
       <div v-if="modal != null" class="modal-content">
        <button class="close" @click="closeModal">&times;</button>
-        <h2>{{modal.name}}</h2>
-        <p v-html="modal.description"></p>
-        <div class="stack">
+        <h2 class="text-center my2">{{modal.name}}</h2>
+        <p class="text-justify" v-html="modal.description"></p>
+        <div class="stack flex flex-center wrap">
+          <strong>Tecnologías usadas:</strong>
           <span v-for="stack in getStack(modal.stack)">{{stack}}</span>
         </div>
-        <a :href="modal.link" target="_blank">Ver código fuente</a>
+        <div class="flex flex-center wrap">
+            <a v-if="modal.src != null" :href="modal.src" target="_blank" class="btn mx05">Ver código fuente</a>
+            <a v-if="modal.link != null" :href="modal.link" target="_blank" class="btn mx05">Ver proyecto</a>
+        </div>
       </div>
     </div>
 

@@ -1,11 +1,11 @@
+*{
+  transition: all .25s ease-out;
+}
 html {
-  height: 100%;
-  width: 100%;
   font-family: 'Lato', sans-serif;
 }
 
 body {
-  height: 100%;
   margin: 0;
   color: var(--body-color, #474747);
   background-color: var(--body-bg);
@@ -85,11 +85,11 @@ footer {
   align-items: center;
 }
 
-.stack div {
+.stack span {
   border-radius: 8px;
   margin: .5rem;
   padding: .5rem;
-  background: linear-gradient( to bottom, #F6D242 -10%, #FF52E5 100%);
+  background: var(--info-bg);
   color: white;
 }
 
@@ -176,7 +176,7 @@ footer {
   .title-decoration::before, .title-decoration::after {
     content: '';
     margin: 0 .5rem;
-    height: .1rem;
+    height: 2px;
     background-color: var(--title-bar-color);
   }
   @media(max-width:380px) {
@@ -233,11 +233,13 @@ body::-webkit-scrollbar {
   border: 1px solid #888;
   width: 80%;
 }
+
 .close {
-  color: #aaa;
+  color: black;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  padding: .25rem .75rem;
 }
 
 .close:hover, .close:focus {
