@@ -13,8 +13,15 @@ Vue.component("theme-picker", {
     };
   },
   mounted() {
+    
     if (localStorage.getItem("theme") != null) {
       this.selected = localStorage.getItem("theme");
+    }else{
+      this.selected = "default";
+      const el = document.documentElement;
+      el.classList.value = "";
+      el.classList.add(this.selected);
+      localStorage.setItem("theme", this.selected);
     }
   },
   watch: {
@@ -59,7 +66,7 @@ Vue.component("project-list", {
 if (document.getElementById("app")) {
   new Vue({
     el: "#app",
-    data: {}
+    components: { themepicker: "theme-picker" }
   });
 }
 

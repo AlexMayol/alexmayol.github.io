@@ -7,7 +7,7 @@ html {
 
 body {
   margin: 0;
-  color: var(--body-color, #474747);
+  color: var(--body-color, #5f5c61);
   background-color: var(--body-bg);
 }
 
