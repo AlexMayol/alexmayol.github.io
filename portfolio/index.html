@@ -9,8 +9,8 @@
   <meta name="subject" content="Mostrando mis proyectos al mundio">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="../style/remedy.css" rel="stylesheet" type="text/css">
-  <link href="../style/style.css" rel="stylesheet" type="text/css">
-  <link href="../style/themes.css" rel="stylesheet" type="text/css">
+  <link href="../style/style.min.css" rel="stylesheet" type="text/css">
+  <link href="../style/themes.min.css" rel="stylesheet" type="text/css">
   <noscript>
     Enable JavaScript in order to see this page properly
   </noscript>
@@ -48,15 +48,15 @@
     <div id="modal" class="modal" role="dialog">
       <div v-if="modal != null" class="modal-content">
        <button class="close" @click="closeModal">&times;</button>
-        <h2 class="text-center my2">{{modal.name}}</h2>
+        <h2 class="text-center my1">{{modal.name}}</h2>
         <p class="text-justify" v-html="modal.description"></p>
         <div class="stack flex flex-center wrap">
           <strong>Tecnologías usadas:</strong>
           <span v-for="stack in getStack(modal.stack)">{{stack}}</span>
         </div>
         <div class="flex flex-center wrap">
-            <a v-if="modal.src != null" :href="modal.src" target="_blank" class="btn mx05">Ver código fuente</a>
-            <a v-if="modal.link != null" :href="modal.link" target="_blank" class="btn mx05">Ver proyecto</a>
+            <a v-if="modal.src != null" :href="modal.src" target="_blank" class="btn m025">Ver código fuente</a>
+            <a v-if="modal.link != null" :href="modal.link" target="_blank" class="btn m025">Ver proyecto</a>
         </div>
       </div>
     </div>

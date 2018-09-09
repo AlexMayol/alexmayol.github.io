@@ -49,7 +49,7 @@ Vue.component("project-list", {
       <img :src="pr.image" alt="">
       <div class="info">
        
-        <h2>{{pr.name}}</h2>
+        <h2 class="text-center">{{pr.name}}</h2>
         <p>{{pr.excerpt}}</p>
         <button @click="showInfo(pr)">Más información</button>
      </div>
