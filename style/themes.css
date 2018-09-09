@@ -313,12 +313,12 @@
   --btn-marg: 1rem 0;
   --btn-pad: .5rem .75rem;
   --btn-color: white;
-  --btn-bg: #326765;
+  --btn-bg: #d56073;
   --btn-border: none;
   --btn-bradius: 6px;
   --btn-cursor: auto;
   --btn-hover-color: white;
-  --btn-hover-bg: #27253d;
+  --btn-hover-bg: #7a4579;
   --btn-transition: all .25s ease;
   --btn-success-color: white;
   --btn-success-bg: black;

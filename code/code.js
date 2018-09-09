@@ -14,7 +14,7 @@ Vue.component("theme-picker", {
   },
   mounted() {
     
-    if (localStorage.getItem("theme") != null) {
+    if (localStorage && localStorage.getItem("theme") != null) {
       this.selected = localStorage.getItem("theme");
     }else{
       this.selected = "default";
