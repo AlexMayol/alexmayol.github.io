@@ -285,12 +285,12 @@
   --h4-size: 1.5rem;
   --h5-size: 1.25rem;
   --h6-size: 1rem;
-  --h1-color: #E06C6F;
-  --h2-color: #E06C6F;
-  --h3-color: #E06C6F;
-  --h4-color: #E06C6F;
-  --h5-color: #E06C6F;
-  --h6-color: #E06C6F;
+  --h1-color: #7a4579;
+  --h2-color: #7a4579;
+  --h3-color: #7a4579;
+  --h4-color: #7a4579;
+  --h5-color: #7a4579;
+  --h6-color: #7a4579;
   --h1-margin: 0;
   --h2-margin: 0;
   --h3-margin: 0;
@@ -548,12 +548,12 @@
   --h4-size: 1.5rem;
   --h5-size: 1.25rem;
   --h6-size: 1rem;
-  --h1-color: #283c63;
-  --h2-color: #283c63;
-  --h3-color: #283c63;
-  --h4-color: #283c63;
-  --h5-color: #283c63;
-  --h6-color: #283c63;
+  --h1-color: #537791;
+  --h2-color: #537791;
+  --h3-color: #537791;
+  --h4-color: #537791;
+  --h5-color: #537791;
+  --h6-color: #537791;
   --h1-margin: 0;
   --h2-margin: 0;
   --h3-margin: 0;
@@ -640,7 +640,7 @@
   --footer-svg-color: #f7f6e7;
   --footer-color: #f7f6e7;
   --footer-bg: #537791;
-  --info-bg: linear-gradient(to right bottom, #f7f6e7, #e7e6e1);
+  --info-bg: linear-gradient(to right bottom, #e7e6e1, #c1c0b9);
   /* https://mycolor.space/gradient?ori=to+right+bottom&hex=%23BAC5D6&hex2=%23219ED3&sub=1 */
   --title-bar-color: #c1c0b9;
   --info-color: black;

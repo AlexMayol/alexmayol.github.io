@@ -65,6 +65,9 @@ body {
 .menu-item:hover, .menu-item:focus {
   transform: scale(1.1);
 }
+.menu-item:after{
+  
+}
 
 .social svg {
   color: var(--footer-svg-color);
