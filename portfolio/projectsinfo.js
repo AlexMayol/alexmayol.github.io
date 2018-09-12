@@ -170,7 +170,7 @@ const projectsinfo = [
         "year": "2014",
         "excerpt": "Práctica para la asigantura Programación Hipermedia I donde creamos un portal con registro y posibilidad de subir imágenes.",
         "description": "Mi primer contacto con PHP donde creamos un portal similar a Flickr, donde los usuarios podían registrarse, subir sus propias fotos, crear álbumes y más.",
-        "image": "img/hotel.png",
+        "image": "img/php.jpg",
         "stack": "HTML, CSS, JS, PHP",
         "src":"https://github.com/AlexMayol/Stardust-Images",
         "link": null,
