@@ -124,7 +124,7 @@ const projectsinfo = [
         "name": "Walpurgis Rush",
         "year": "2016",
         "excerpt": "Videojuego para Android realizado durante la Global Game Jam 2016",
-        "description": "Con motivo de la GGJ 2016 realizamos este juego 'infinite runner' en el que plasmamos niveles de desplazamiento lateral (2D) y en profundidad (3D).",
+        "description": "Con motivo de la GGJ 2016 realizamos este juego 'endless runner' en el que plasmamos niveles de desplazamiento lateral (2D) y en profundidad (3D).",
         "image": "img/walpurgis.png",
         "stack": "Unity, C#, 3DS Max",
         "src": null,

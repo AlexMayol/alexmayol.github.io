@@ -1,6 +1,6 @@
-* {
+/* * {
   transition: all .25s ease-out;
-}
+} */
 
 html {
   font-family: 'Lato', sans-serif;
@@ -280,5 +280,8 @@ body::-webkit-scrollbar {
 .close:hover, .close:focus {
   color: black;
   text-decoration: none;
+  cursor: pointer;
+}
+button, .btn{
   cursor: pointer;
 }
