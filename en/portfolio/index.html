@@ -23,9 +23,9 @@
   <header role="banner">
     <nav class="nav-menu">
       <ul class="menu">
-        <li class="menu-item"><a href="../index.html">Inicio</a></li>
-        <li class="menu-item"><a target="_blank" href="https://drive.google.com/file/d/1Dw6jRnJydq_mRYONrY1MFdeYAt8Sh0O_/view">Curriculum</a></li>
-        <li class="menu-item"><a href="mailto:alexmayolc@gmail.com">Contacto</a></li>
+        <li class="menu-item"><a href="../index.html">Home</a></li>
+        <li class="menu-item"><a target="_blank" href="https://drive.google.com/file/d/1dE6faqRfyNRGFDG08jD2M8wSJhnOZVzT/view">Resume</a></li>
+        <li class="menu-item"><a href="mailto:alexmayolc@gmail.com">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -57,8 +57,8 @@
           <span v-for="stack in getStack(modal.stack)">{{stack}}</span>
         </div>
         <div class="flex flex-center wrap">
-            <a v-if="modal.src != null" :href="modal.src" target="_blank" class="btn m025">Ver código fuente</a>
-            <a v-if="modal.link != null" :href="modal.link" target="_blank" class="btn m025">Ver proyecto</a>
+            <a v-if="modal.src != null" :href="modal.src" target="_blank" class="btn m025">See source code</a>
+            <a v-if="modal.link != null" :href="modal.link" target="_blank" class="btn m025">See project</a>
         </div>
       </div>
     </div>
@@ -94,7 +94,7 @@
   </footer>
   <script type="text/javascript" src="projectsinfo.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script src="../../code/code.js"></script>
+  <script src="./../code/code.js"></script>
 </body>
 
 </html>
