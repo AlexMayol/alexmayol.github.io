@@ -33,17 +33,17 @@
   <main id="projects">
     
     <section class="p2">
-      <h2 class="title-decoration my2">Sitios Web</h2>
+      <h2 class="title-decoration my2">Websites</h2>
       <project-list :projects="webs"></project-list>
     </section>
 
     <section class="p2">
-      <h2 class="title-decoration my2">Web Apps y herramientas</h2>
+      <h2 class="title-decoration my2">Webapps and tools</h2>
       <project-list :projects="apps"></project-list>
     </section>
 
     <section class="p2">
-      <h2 class="title-decoration my2">Juegos</h2>
+      <h2 class="title-decoration my2">Games</h2>
       <project-list :projects="games"></project-list>
     </section>
 
@@ -53,7 +53,7 @@
         <h2 class="text-center my1">{{modal.name}}</h2>
         <p class="text-justify" v-html="modal.description"></p>
         <div class="stack flex flex-center wrap">
-          <strong>Tecnologías usadas:</strong>
+          <strong>Stack:</strong>
           <span v-for="stack in getStack(modal.stack)">{{stack}}</span>
         </div>
         <div class="flex flex-center wrap">
