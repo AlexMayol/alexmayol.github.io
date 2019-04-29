@@ -155,14 +155,14 @@ const projectsinfo = [
     },
 
     {
-        "name": "Adaptamos Group",
+        "name": "Spanish Extravaganza",
         "year": "2018",
-        "excerpt": "Mejora del portal en cuanto a tiempo de carga y accesibilidad.",
-        "description": "Portal web para un cliente que quería mejorar el aspecto de su sitio, adaptarlo a sus colores corportativos y mejorar su posicionamiento en los motores de búsqueda.",
-        "image": "img/adaptamos.png",
-        "stack": "WordPress, CSS",
+        "excerpt": "Actualidad del festival español que triunfa en oriente",
+        "description": "Portal web para un proyecto a nivel mundial donde un grupo de talentosos chefs se reunen para demostrar por qué la gastronomía española no tiene rival. En el sitio hay sliders, biografías y distintos elementos desarrollados con jQuery y plugins del mismo.",
+        "image": "img/spex.PNG",
+        "stack": "WordPress, jQuery, CSS",
         "src":null,
-        "link": "http://www.adaptamosgroup.com/",
+        "link": "https://spanishextravaganza.com/",
         "type":"web"    
     },
     {
