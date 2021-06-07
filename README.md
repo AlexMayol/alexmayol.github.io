@@ -1,2 +1,0 @@
-# alexmayol.github.io
-Portfolio
