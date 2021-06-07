@@ -1,5 +1,10 @@
+import { Shell } from "@/layout/Shell";
 const Index = () => {
-  return <p className="text-2xl"></p>;
+  return (
+    <Shell>
+      <p className="text-2xl">s</p>
+    </Shell>
+  );
 };
 
 export default Index;
